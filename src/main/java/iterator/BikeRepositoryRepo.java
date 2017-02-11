@@ -29,8 +29,9 @@ public class BikeRepositoryRepo implements Iterable<String> {
 		index++;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
-	public Iterator iterator() {
+	public Iterator<String> iterator() {
 		return new Iterator() {
 
 			private int currentIndex = 0;
@@ -41,7 +42,7 @@ public class BikeRepositoryRepo implements Iterable<String> {
 			}
 
 			@Override
-			public Object next() {
+			public String next() {
 				return bikes[currentIndex++];
 			}
 		};
@@ -52,6 +53,7 @@ public class BikeRepositoryRepo implements Iterable<String> {
 
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Spliterator spliterator() {
 		return null;

@@ -1,7 +1,5 @@
 package iterator;
 
-import java.util.Iterator;
-
 /**
  * Created by stathis on 14/1/2017.
  */

@@ -9,10 +9,10 @@ import java.util.List;
 public class CommandDemo {
 
 	public static void main(String[] args) {
-		Light light1 = new Light();
-		Light light2 = new Light();
+		Light light1 = new Light("");
+		Light light2 = new Light("");
 
-		List<Light> lights = Arrays.asList(new Light[] { light1, light2 });
+		List<Light> lights = Arrays.asList(light1, light2);
 
 		Command allCommand = new AllLightsCommand(lights);
 
